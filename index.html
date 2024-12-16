@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex justify-center mt-10">
+    <div class="flex items-center justify-center flex-col mt-10 w-[50%] h-[60vh] bg-gradient-to-br from-blue-500 to-green-500 rounded-xl">
+    <section class="search">
+        <div class="py-5 m-5 mt-[-50px] flex items-center">
+            <input id="input" type="text" placeholder="  City Name" class="bg-gray-200 h-10 rounded-xl m-2">
+            <button onclick="search()" class="bg-gray-200 rounded-full h-10 w-10 flex items-center justify-center">
+                <img src="img/magnifying-glass-solid.svg" class="h-5 w-5" alt="Search Icon"/>
+            </button>            
+        </div>
+    </section>
+        
+    <section class="weather">
+        <div class="">
+            <img src="img/sun-regular.svg" class="w-10 h-auto"/>
+            <h2>Temperature</h2>
+            <h3 id="city">`City: `</h3>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div>
+            <p>Humidty</p>
+            <p>Wind Speed</p>
+        </div>
+    </section>
+    </div>  
+    <script src="script.js"></script>
+</body>
+</html>
